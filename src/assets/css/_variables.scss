@@ -1,0 +1,35 @@
+// ─── Layout dimensions ───────────────────────────────────────────────
+$sidebar-width:       240px;
+$sidebar-mini-width:  60px;
+$topbar-height:       54px;
+
+// ─── Sidebar palette ─────────────────────────────────────────────────
+$sidebar-bg:          #1e2d3d;
+$sidebar-text:        #8fa3b8;
+$sidebar-hover-bg:    rgba(255,255,255,0.05);
+$sidebar-active-bg:   rgba(255,255,255,0.10);
+$sidebar-active-text: #ffffff;
+$sidebar-accent:      #4299e1;       // left-border on active item
+$sidebar-group-label: #4a6278;
+$sidebar-border:      rgba(255,255,255,0.06);
+$sidebar-footer-bg:   rgba(0,0,0,0.18);
+
+// ─── Topbar palette ──────────────────────────────────────────────────
+$topbar-bg:           #ffffff;
+$topbar-border:       #e2e8f0;
+$topbar-text:         #374151;
+$topbar-icon:         #6b7280;
+
+// ─── Content area ────────────────────────────────────────────────────
+$content-bg:          #f1f5f9;
+$content-text:        #1e293b;
+
+// ─── Brand accent (used in login panel + active states) ──────────────
+$brand-primary:       #2563eb;
+$brand-secondary:     #1e2d3d;
+
+// ─── Misc ────────────────────────────────────────────────────────────
+$border-color:        #e2e8f0;
+$radius-sm:           4px;
+$radius-md:           6px;
+$transition-base:     0.2s ease;

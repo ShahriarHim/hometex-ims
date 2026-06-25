@@ -1,0 +1,67 @@
+{
+  "name": "hometex-admin",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier --write src",
+    "sync-patterns": "node .claude/scripts/sync-patterns.js",
+    "sync-patterns:dry-run": "node .claude/scripts/sync-patterns.js --dry-run",
+    "sync-patterns:report": "node .claude/scripts/sync-patterns.js --report",
+    "sync-patterns:audit": "node .claude/scripts/sync-patterns.js --audit",
+    "sync-patterns:view": "node .claude/scripts/sync-patterns.js --view",
+    "sync-patterns:export": "node .claude/scripts/sync-patterns.js --export-md"
+  },
+  "dependencies": {
+    "@sentry/react": "^8.0.0",
+    "@tanstack/react-query": "^5.56.2",
+    "@tanstack/react-query-devtools": "^5.56.2",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "dayjs": "^1.11.13",
+    "dompurify": "^3.1.6",
+    "file-saver": "^2.0.5",
+    "papaparse": "^5.4.1",
+    "react": "^18.3.1",
+    "react-barcode": "^1.5.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-quill": "^2.0.0",
+    "react-router-dom": "^6.26.1",
+    "react-select": "^5.8.0",
+    "react-to-print": "^2.15.1",
+    "recharts": "^3.9.0",
+    "sweetalert2": "^11.12.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.0",
+    "@types/dompurify": "^3.0.5",
+    "@vitejs/plugin-react": "^4.3.1",
+    "eslint": "^9.9.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.9",
+    "eslint-plugin-security": "^3.0.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "vite": "^5.4.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+body{
+    font-family: Ubantu, serif;
+    overflow-x:hidden;
+}
+
+.bg-theme{
+    background-image: linear-gradient(90deg, $theme-color, $theme-color-light, $theme-color);
+}
+
+.text-silver{
+    color: $silver;
+}
+
+.text-theme-light{
+    color: $theme-color-light;
+}
+
+.bg-theme-basic{
+    background: $theme-color;
+}
+.nav-link{
+    color: white !important;
+    &:hover{
+        color: $silver !important;
+    }
+    &:focus{
+        color: $silver !important;
+    }
+}
+
+.sb-sidenav-menu-heading{
+    color: $theme-color-light !important;
+}
+
+p, h1, h2, h3, h5, h6, address, ul{
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.modal-header{
+    padding: .25rem 1rem;
+    background-image: linear-gradient(90deg, $theme-color, $theme-color-light, $theme-color);
+    color: white;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.zoom-able{
+    transition: all .3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+.aspect-two{
+    aspect-ratio: 1/1.25 !important;
+}
+.aspect-one{
+    aspect-ratio: 1/1 !important;
+    object-fit: cover;
+}
+.text-theme{
+    color: $theme-color;
+}
+.theme-button{
+    background: $theme-color;
+    border: 1px solid $theme-color;
+    color: $white;
+    @include transition;
+    a{
+        color: $white;
+    }
+    &:hover{
+        background: $white;
+        border: 1px solid $theme-color;
+        a{
+            color: $theme-color;
+        }
+    }
+}
+label{
+    position: relative;
+    .login-error-msg{
+        position: absolute;
+        color: red;
+        text-shadow: 0 0 10px $white;
+    }
+}
+.my-table{
+    font-size: 14px;
+    th, td{
+        vertical-align: middle;
+    }
+}
+.product-table{
+    font-size: 12px;
+}
+.table-image{
+    width: 75px;
+    cursor: pointer;
+}
+.search-area{
+    label{
+        font-size: 14px;
+        color: $theme-color;
+        p{
+        margin-bottom: 5px;
+        }
+    }
+}
+.loader{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    img{
+        position: absolute;
+        @include center;
+    }
+}
+
+.soft-landing{
+    @include transition;
+}
+.no-data-found-container{
+    min-height: 40px;
+    width: 100%;
+    .no-data-found{
+        position: absolute;
+    }
+}
+.w-40{
+    width: 40px;
+}
